@@ -1,6 +1,6 @@
 // firebaseConfig.js
 
-import * as firebase from 'firebase/compat/app';
+import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
 
@@ -22,8 +22,6 @@ const firebaseConfig = {
   
 
 // Initialize Firebase
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
+const firebaseApp = initializeApp(firebaseConfig);
 
-export default firebase;
+export default firebaseApp;

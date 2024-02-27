@@ -1,6 +1,6 @@
 // UserAuth.jsx
 
-import firebase from './firebaseConfig';
+import firebaseApp from './firebaseConfig';
 
 // Sign up new users
 const signUpUser = async (email, password) => {
