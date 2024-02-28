@@ -6,13 +6,21 @@ import LoginScreen from './components/UserAuth';
 export default function App() {
 
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  const handleLoginSuccess = () => {
+    setIsLoggedIn(true);
+  }
 
   return (
     <>
-      {isLoading ? (<LoadingScreen />): 
-      (
+      {isLoading ? (
+      <LoadingScreen />
+      ): isLoggedIn ? (
         <AppLayout/>
+      ): 
+      (
+        <LoginScreen onLoginSuccess={handleLoginSuccess}/>
       )}
     </>
   );
