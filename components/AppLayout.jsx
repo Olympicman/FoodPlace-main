@@ -1,14 +1,29 @@
 // AppLayout.jsx
+// No platform specific modifications in this file (verified)
 
+// Purpose: This component is the main layout for the application. 
+// It contains the bottom tab navigator and the main screens for the app.
+// It is the main component that will be rendered by the App.js file.
+
+// TODO: Abstract as much as possible into separate files and components
+// TODO: The bottom tabs look weird on iOS, fix that
+// TODO: The client has asked to replace the points tab with an special offers tab, implement that
+
+
+// React and React Native modules
 import React from 'react';
 import { Text, View, Image, SafeAreaView, Dimensions } from 'react-native';
-import { styles, tabNavigatorStyles } from '../styles';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+// Custom components
 import FontLoader from './FontLoader';
 import { headerOptions } from './HeaderConfig';
 import PointsProgressBar from './PointBar';
 import NewsAndOffersCarousel from './NewsCarousel';
+
+// Styles
+import { styles, tabNavigatorStyles } from '../styles';
 
 
 const Greeting = () => {

@@ -1,6 +1,20 @@
 // firebaseConfig.js
+// No platform specific modifications in this file (verified)
 
+// Purpose: This file contains the configuration for the Firebase app.
+// It is used to initialize the Firebase app and to export the auth object.
+
+// WARNING: This file contains sensitive information. Do not share it with anyone.
+// This file should not be committed to a public repository.
+// Failure to do so may result in legal action.
+
+
+// Used Firebase features: Authentication
+
+
+// Firebase modules
 import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
 
@@ -23,5 +37,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
+const auth = getAuth(firebaseApp);
 
-export default firebaseApp;
+export { firebaseApp, auth };
