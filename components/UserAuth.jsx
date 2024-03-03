@@ -1,9 +1,15 @@
 // UserAuth.jsx
+// No platform specific modifications in this file (verified)
 
+// React and React Native modules
 import React, { useState } from 'react';
 import { View, TextInput, StyleSheet, Alert, Image } from 'react-native';
+
+// Firebase modules
 import { auth } from './firebaseConfig'; // Import the auth object from firebaseConfig
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+
+// Custom components
 import StyledButton from './StyledButton'; // Import the StyledButton component
 
 const LoginScreen = ({ onLoginSuccess }) => {
@@ -39,7 +45,7 @@ const LoginScreen = ({ onLoginSuccess }) => {
 
   // Function to validate email format
   const validateEmail = (email) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Note to self: Learn what is regex and how to use it
     return regex.test(email);
   };
 
