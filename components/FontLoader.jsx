@@ -1,6 +1,12 @@
 // FontLoader.jsx
+// No platform specific modifications in this file (verified)
+
+// Purpose: This file contains the FontLoader component which is used to load custom fonts for the app.
+
+// React and React Native modules
 import React from 'react';
 import { View, ActivityIndicator } from 'react-native';
+// Expo modules
 import { useFonts } from 'expo-font';
 
 const FontLoader = ({ children }) => {

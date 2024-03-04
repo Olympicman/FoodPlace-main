@@ -1,7 +1,12 @@
 // StyledButton.jsx
+// No platform specific modifications in this file (verified)
 
+// Purpose: This file contains the StyledButton component which is used to create a custom styled button.
+
+// React and React Native modules
 import React from 'react';
 import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
+// Custom components
 import FontLoader from './FontLoader';
 
 const StyledButton = ({ onPress, title }) => {

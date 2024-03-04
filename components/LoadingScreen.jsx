@@ -1,8 +1,15 @@
 // LoadingScreen.jsx
+// No platform specific modifications in this file (verified)
 
+// Purpose: This file contains the LoadingScreen component which is used to display a loading screen while the app is loading.
+
+
+// React and React Native modules
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import * as Progress from 'react-native-progress';
+
+// Custom components
 import FontLoader from './FontLoader';
 
 

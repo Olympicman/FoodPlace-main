@@ -1,7 +1,13 @@
 // PointBar.jsx
+// No platform specific modifications in this file (verified)
 
+// Purpose: This file contains the PointsProgressBar component which is used to display a progress bar based on the user's points.
+
+// React and React Native modules
 import React from 'react';
 import { View, Text, StyleSheet, Image, Dimensions } from 'react-native';
+
+// Custom components
 import FontLoader from './FontLoader';
 
 const screenWidth = Dimensions.get('window').width;

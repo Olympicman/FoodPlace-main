@@ -1,5 +1,10 @@
 // NewsCarousel.jsx
+// No platform specific modifications in this file (verified)
 
+// Purpose: This file contains the NewsAndOffersCarousel component which is used to 
+// display news and offers in a carousel.
+
+// React and React Native modules
 import React from 'react';
 import { View, Text, Dimensions, StyleSheet } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
