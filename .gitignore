@@ -36,3 +36,6 @@ yarn-error.*
 
 # Firebase config
 components/firebaseConfig.js
+
+#AWS config
+components/awsConfig.js
